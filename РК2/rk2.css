@@ -1,0 +1,36 @@
+  body{
+    background-color: #FFFDFB;
+    font-family:Verdana, sans-serif;
+    font-style: normal;
+  }
+  h1{
+    font-weight: 100;
+    color: #475168;
+  }
+  table{
+    border: 2px solid #CBD2D7;
+    width: 56%
+  }
+  th,td{
+    border: 2px solid #CBD2D7;
+    padding: 10px;
+    text-align: center;
+  }
+  th {
+    background-color: #E9E6DD;
+    font-weight: 120;
+    font: 120% Verdana;
+    color: #475168;
+  }
+  td {
+    color: #475168;
+  }
+  ol li:nth-child(2n){
+    background-color: #FFFDFB;
+    color: #475168
+  }
+  ol li:nth-child(2n+1){
+    background-color: #E9E6DD;
+    color: #475168
+  }
+
