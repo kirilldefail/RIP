@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="ru">
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <link rel="stylesheet" href="bootstrap.min.css"/>
+    <script src="bootstrap.bundle.min.js"></script>
+
+    <style>
+      .center-cropped {
+        object-fit: none;
+        object-position: center;
+        width: 300px;
+        height: 300px;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-default navbar-fixed-top navbar-expand-lg navbar-light bg-light" role="navigation">
+      <a class="navbar-brand" href="#" style="margin-left: 30px">
+        Панель навигации
+      </a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#progressbars">Индикаторы прогресса</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tables">Таблица</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#forms">Элементы HTML-форм</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link text-black-50 dropdown-toggle active" area-current="page" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Выпадающий список кнопок
+            </a>
+            <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+              <li><a class="text-white-50 dropdown-item" href="javascript:alert('Кнопка 1')">Кнопка 1</a></li>
+              <li><a class="text-white-50 dropdown-item" href="javascript:alert('Кнопка 2')">Кнопка 2</a></li>
+              <li><a class="text-white-50 dropdown-item" href="javascript:alert('Кнопка 3')">Кнопка 3</a></li>
+              <li><a class="text-white-50 dropdown-item" href="javascript:alert('Кнопка 4')">Кнопка 4</a></li>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="m-3">
+      <h2 id="progressbars">Индикаторы прогресса</h2>
+
+      <div class="progress mb-1">
+        <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+        <div class="progress-bar bg-warning" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+        <div class="progress-bar bg-info" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+
+      <div class="progress mb-1">
+        <div class="progress-bar bg-info" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+
+      <div class="progress mb-1">
+        <div class="progress-bar bg-warning" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+      </div>
+
+      <div class="progress mb-1">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+    </div>
+
+    <div class="m-3">
+      <h2 id="tables">Таблицы</h2>
+      <table class="table">
+         <thead>
+           <tr>
+             <th scope="col">Номер строки</th>
+             <th scope="col">Слова</th>
+             <th scope="col">Слова</th>
+             <th scope="col">Слова</th>
+           </tr>
+         </thead>
+         <tbody>
+           <tr>
+             <th scope="row">1</th>
+             <td>Земную жизнь</td>
+             <td>пройдя</td>
+             <td>до половины</td>
+           </tr>
+           <tr>
+             <th scope="row">2</th>
+             <td>Я очутился</td>
+             <td>в сумрачном</td>
+             <td>лесу</td>
+           </tr>
+           <tr>
+             <th scope="row">3</th>
+             <td>Утратив</td>
+             <td>первый путь</td>
+             <td>во тьме долины</td>
+           </tr>
+         </tbody>
+      </table>
+
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th class="table-warning" scope="col">Я</th>
+            <th class="table-warning" scope="col">не ковёр</th>
+            <th class="table-warning" scope="col">не гортензия</th>
+            <th class="table-warning" scope="col">не крыша</th>
+            <th class="table-warning" scope="col">не звезда</th>
+            <th class="table-warning" scope="col">не трава</th>
+            <th class="table-warning" scope="col">не свеча</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="table-info">Нерон</td>
+            <td class="table-info">Да</td>
+            <td class="table-info">Нет</td>
+            <td class="table-info">Наверное</td>
+            <td class="table-info">Да</td>
+            <td class="table-info">Возможно</td>
+            <td class="table-info">Очевидно</td>
+          </tr>
+          <tr>
+            <td class="table-info">Приам</td>
+            <td class="table-info">Нет</td>
+            <td class="table-info">Нет</td>
+            <td class="table-info">Возможно</td>
+            <td class="table-info">Да</td>
+            <td class="table-info">Наверное</td>
+            <td class="table-info">Наверное</td>
+          </tr>
+          <tr>
+            <td class="table-info">Антоний</td>
+            <td class="table-info">Наверное</td>
+            <td class="table-info">Да</td>
+            <td class="table-info">Да</td>
+            <td class="table-info">Нет</td>
+            <td class="table-info">Возможно</td>
+            <td class="table-info">Очевидно</td>
+          </tr>
+          <tr>
+            <td class="table-info">Цезарион</td>
+            <td class="table-info">Очевидно</td>
+            <td class="table-info">Да</td>
+            <td class="table-info">Да</td>
+            <td class="table-info">Да</td>
+            <td class="table-info">Да</td>
+            <td class="table-info">Да</td>
+          </tr>
+          <tr>
+            <td class="table-info">Салоники</td>
+            <td class="table-info">Нет</td>
+            <td class="table-info">Да</td>
+            <td class="table-info">Наверное</td>
+            <td class="table-info">Нет</td>
+            <td class="table-info">Нет</td>
+            <td class="table-info">Нет</td>
+          </tr>
+          <tr>
+            <td class="table-info">Александрия</td>
+            <td class="table-info">Да</td>
+            <td class="table-info">Наверное</td>
+            <td class="table-info">Нет</td>
+            <td class="table-info">Да</td>
+            <td class="table-info">Наверное</td>
+            <td class="table-info">Наверное</td>
+          </tr>
+          <tr>
+            <td class="table-info">Галадриэль</td>
+            <td class="table-info">Да</td>
+            <td class="table-info">Да</td>
+            <td class="table-info">Наверное</td>
+            <td class="table-info">Нет</td>
+            <td class="table-info">Да</td>
+            <td class="table-info">Наверное</td>
+          </tr>
+        </tbody>
+      </table>
+
+    <div class="m-3">
+      <h2 id="forms">Элементы HTML-форм</h2>
+
+      <form>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputEmail4">Email</label>
+              <input type="email" class="form-control is-invalid" id="inputEmail4" placeholder="Email">
+              <div class="invalid-feedback">
+                Please choose a username.
+              </div>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputPassword4">Пароль</label>
+              <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+            </div>
+          </div>
+          <div class="form-group col-md-4 mb-3">
+            <label for="inputAddress">Адрес</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+          </div>
+          <div class="form-group col-md-4 mb-3">
+            <label for="combobox">Ваша страна</label>
+            <select name="combobox" role="combobox" class="custom-select" required>
+              <option value="comboitem1" selected>Россия</option>
+              <option value="comboitem2">США</option>
+              <option value="comboitem3">Великобритания</option>
+              <option value="comboitem4">Индия</option>
+            </select>
+          </div>
+          <div class="form-group col-md-4 mb-3">
+            <label for="datalist">Кто ваш лучший друг?</label>
+            <input name="datalist" list="datalistitems" class="custom-select custom-select-sm" required>
+              <datalist id="datalistitems">
+                <option value="Друг 1">Будда</option>
+                <option value="Друг 2">Иисус</option>
+                <option value="Друг 3">Аллах</option>
+                <option value="Друг 4">Кришна</option>
+              </datalist>
+            </input>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-4 mb-3">
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="checkbox1"></input>
+              <label class="custom-control-label" for="checkbox1">Галочка раз</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="checkbox2"></input>
+              <label class="custom-control-label" for="checkbox2">Галочка два</label>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="custom-control custom-radio">
+              <input type="radio" class="custom-control-input" id="radio1" name="radiogroup" value="radio2" checked="checked"></input>
+              <label class="custom-control-label" for="radio1">Радиокнопка раз</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input type="radio" class="custom-control-input" id="radio2" name="radiogroup" value="radio2"></input>
+              <label class="custom-control-label" for="radio2">Радиокнопка два</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
+            <select name="listbox" role="listbox" size="4" class="custom-select " required>
+              <option value="listitem1" selected>Элемент 1</option>
+              <option value="listitem2">Элемент 2</option>
+              <option value="listitem3">Элемент 3</option>
+              <option value="listitem4">Элемент 4</option>
+            </select>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="multiline">Есть ли ещё комментарии?</label>
+            <textarea name="multiline" class="form-control" rows=7 cols=40
+              placeholder="Текстовое поле ввода из нескольких строк" required></textarea>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
+            <input type="submit" class="btn btn-primary" value="Отправить"></input>
+          </div>
+        </div>
+      </form>
+
+    </div>
+  </body>
+</html>

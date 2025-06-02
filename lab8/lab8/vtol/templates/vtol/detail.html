@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ru">
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Detail</title>
+    <style>
+        body{
+          background-color: #FFFDFB;
+          font-family:Verdana, sans-serif;
+          font-style: normal;
+        }
+        h1{
+          font-weight: 100;
+          color: #475168;
+        }
+        table{
+          border: 2px solid #CBD2D7;
+          width: 90%
+        }
+        th,td{
+          border: 2px solid #CBD2D7;
+          padding: 10px;
+          text-align: center;
+        }
+        th {
+          background-color: #D9DFE6;
+          font-weight: 120;
+          font: 120% Verdana;
+          color: #475168;
+        }
+        td {
+          color: #475168;
+        }
+      .cropped_image {
+        max-width: 256px;
+        max-height: 256px;
+        width:auto;
+        height:auto;
+      }
+    </style>
+  </head>
+  <body>
+    <ol>
+      <a href="{% url 'items' %}">На главную</a>
+      <h1>{{ item.name }}</h1>
+      <table class="tb"> 
+        <tr>
+          <th>Название</th>
+          <th>Изображение</th>
+          <th>Содержание</th>
+        </tr>
+        <tr>
+          <td>{{ item.name }}</td>
+          {% load static %}
+          <td><img class="cropped_image" src="{% static item.image %}"></img></td>
+          <td>{{ item.contents }}</td>
+        </tr>
+      </table>
+    </ol>
+  </body>
+</html>

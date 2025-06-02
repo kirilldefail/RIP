@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Форма</title>
+  <style>
+    body{
+      font-family: Verdana, sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <section> 
+    <hr>
+    <form action="http://ww1.somesite.com/" method="GET">
+      <h1>Заказ пиццы</h1>
+      <section>
+        <label for="patty">Какой вид пиццы вы хотите заказать?</label>
+        <input type="text" name="patty" id="patty" placeholder="protein">
+      </section>
+      <hr>
+
+      <section>
+        <label for="amount">Сколько пицц вы хотите заказать?</label>
+        <input type="number" name="amount" id="amount" step="2">
+      </section>
+      <hr>
+
+      <section>
+        <label for="doneness">Насколько острой должна быть пицца?</label>
+        <br>
+        <span>Не острый</span>
+        <input type="range" name="doneness" id="doneness" value="3" min="1" max="5" step="1">
+        <span>Очень острый</span>
+      </section>
+      <hr>
+
+      <section>
+        <span>Какую ночинку добавить?</span>
+        <br>
+        <input type="checkbox" name="topping" id="lettuce" value="lettuce">
+        <label for="lettuce">Томатный</label>
+        <input type="checkbox" name="topping" id="tomato" value="tomato">
+        <label for="tomato">Луковый</label>
+        <input type="checkbox" name="topping" id="onion" value="onion">
+        <label for="onion">Сливочный</label>
+      </section>
+      <hr>
+
+      <section>
+        <span>Нужен ли сыр?</span>
+        <br>
+        <input type="radio" name="cheese" id="yes" value="yes">
+        <label for="yes">Да</label>
+        <input type="radio" name="cheese" id="no" value="yes">
+        <label for="no">Нет</label>
+      </section>
+      <hr>
+
+      <section>
+        <label for="bun">Какой тип коржа использовать?</label>
+        <select name="bun" id="bun">
+          <option value="sesame">Кунжутный</option>
+          <option value="potatoe">Картофельный</option>
+          <option value="pretzel">Солёный</option>
+        </select>
+      </section>
+      <hr>
+
+      <section>
+        <label for="sauce">Какой соус добавить?</label>
+        <input list="sauces" id="sauce" name="sauce">
+        <datalist id="sauces">
+          <option value="ketchup">Кетчуп</option>
+          <option value="mayo">Майонез</option>
+          <option value="mustard">Горчица</option>
+        </datalist>
+      </section>
+      <hr>
+      <section>
+        <label for="pattie">Какое мясо добавить?</label>
+        <select name="pattie" id="pattie" size="2">
+          <option value="chicken">Курица</option>
+          <option value="beef">Говядина</option>
+        </select>
+      </section>
+      <hr>
+      <section> 
+        <label for="extra">Есть ли ещё пожелания?</label>
+        <br>
+        <textarea id="extra" name="extra" rows="3" cols="40"></textarea>
+      </section>
+      <hr>
+
+      <section>
+        <input type="submit" value="Отправить" style="width: 10%; font-size: 500%">
+        <button type="reset" name="Reset">
+          <img src="img/button.png" alt="reset" width="30px" height="30px">
+        </button>
+      </section>
+    </form>
+  </section>
+</body>
+
+</html>

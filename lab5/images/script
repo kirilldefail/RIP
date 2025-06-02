@@ -1,0 +1,6 @@
+#!/bin/bash
+
+for file in *.JPG
+do 
+sips -s format png $file --out $file.png
+done
